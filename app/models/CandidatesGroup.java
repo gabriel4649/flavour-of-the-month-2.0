@@ -13,7 +13,7 @@ import com.avaje.ebean.*;
  * Project entity managed by Ebean
  */
 @Entity 
-public class Project extends Model {
+public class CandidatesGroup extends Model {
 
     @Id
     public Long id;
@@ -25,7 +25,7 @@ public class Project extends Model {
     @ManyToMany
     public List<User> members = new ArrayList<User>();
     
-    public Project(String name, String folder, User owner) {
+    public CandidatesGroup(String name, String folder, User owner) {
         this.name = name;
         this.folder = folder;
         this.members.add(owner);
@@ -33,12 +33,12 @@ public class Project extends Model {
     
     // -- Queries
     
-    public static Model.Finder<Long,Project> find = new Model.Finder(Long.class, Project.class);
+    public static Model.Finder<Long,CandidatesGroup> find = new Model.Finder(Long.class, CandidatesGroup.class);
     
     /**
      * Retrieve project for user
      */
-    public static List<Project> findInvolving(String user) {
+    public static List<CandidatesGroup> findInvolving(String user) {
         return find.where()
             .eq("members.email", user)
             .findList();
@@ -56,8 +56,8 @@ public class Project extends Model {
     /**
      * Create a new project.
      */
-    public static Project create(String name, String folder, String owner) {
-        Project project = new Project(name, folder, User.find.ref(owner));
+    public static CandidatesGroup create(String name, String folder, String owner) {
+        CandidatesGroup project = new CandidatesGroup(name, folder, User.find.ref(owner));
         project.save();
         project.saveManyToManyAssociations("members");
         return project;
@@ -67,7 +67,7 @@ public class Project extends Model {
      * Rename a project
      */
     public static String rename(Long projectId, String newName) {
-        Project project = find.ref(projectId);
+        CandidatesGroup project = find.ref(projectId);
         project.name = newName;
         project.update();
         return newName;
@@ -87,7 +87,7 @@ public class Project extends Model {
      * Add a member to this project
      */
     public static void addMember(Long project, String user) {
-        Project p = Project.find.setId(project).fetch("members", "email").findUnique();
+        CandidatesGroup p = CandidatesGroup.find.setId(project).fetch("members", "email").findUnique();
         p.members.add(
             User.find.ref(user)
         );
@@ -98,7 +98,7 @@ public class Project extends Model {
      * Remove a member from this project
      */
     public static void removeMember(Long project, String user) {
-        Project p = Project.find.setId(project).fetch("members", "email").findUnique();
+        CandidatesGroup p = CandidatesGroup.find.setId(project).fetch("members", "email").findUnique();
         p.members.remove(
             User.find.ref(user)
         );
