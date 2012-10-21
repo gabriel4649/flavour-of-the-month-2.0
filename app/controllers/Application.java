@@ -78,8 +78,8 @@ public class Application extends Controller {
     	    return ok(vote.render(User.findAll()));
     	  }
       
-    public static Result viewMatches() {
-    	    return ok(viewMatches.render("Your new application is ready."));
+    public static Result getMatches() {
+    	    return ok(viewMatches.render(User.findAll()));
     	  }
       
     public static Result myProfile() {
