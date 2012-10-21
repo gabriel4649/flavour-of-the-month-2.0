@@ -3,24 +3,61 @@
 
 users:
 
+# demo user whom is male
     - !!models.User
-        email:      guillaume@sample.com
-        name:       Guillaume Bort
+        email:      edilbert@sample.com
+        name:       Eric Dilbert
+        password:   secret
+    
+#demo matches female 1 to 10
+    - !!models.User
+        email:      acooper@sample.com
+        name:       Alice Cooper
         password:   secret
     
     - !!models.User
-        email:      maxime@sample.com
-        name:       Maxime Dantec
+        email:      laldridge@sample.com
+        name:       Lily Aldridge
         password:   secret
     
     - !!models.User
-        email:      sadek@sample.com
-        name:       Sadek Drobi
+        email:      mandersen@sample.com
+        name:       May Andersen
         password:   secret
-    
+
     - !!models.User
-        email:      erwan@sample.com
-        name:       Erwan Loisant
+        email:      tbanks@sample.com
+        name:       Tyra Banks
+        password:   secret
+
+    - !!models.User
+        email:      ccampbell@sample.com
+        name:       Carla Campbell
+        password:   secret
+
+    - !!models.User
+        email:      rclark@sample.com
+        name:       Rachel Clark
+        password:   secret
+
+    - !!models.User
+        email:      ddriegen@sample.com
+        name:       Dewi Driegen
+        password:   secret
+
+    - !!models.User
+        email:      eheming@sample.com
+        name:       Emma Heming
+        password:   secret
+
+    - !!models.User
+        email:      kkloss@sample.com
+        name:       Karlie Kloss
+        password:   secret
+
+    - !!models.User
+        email:      alima@sample.com
+        name:       Adriana Lima
         password:   secret
     
 # Projects
@@ -33,163 +70,23 @@ projects:
         folder:     Play framework
         members:
             - !!models.User
-                email: guillaume@sample.com
+                email: acooper@sample.com
             - !!models.User
-                email: maxime@sample.com
+                email: laldridge@sample.com
             - !!models.User
-                email: sadek@sample.com
+                email: mandersen@sample.com
             - !!models.User
-                email: erwan@sample.com
-
-    - !!models.Project
-        id:         2
-        name:       Play 1.2.4
-        folder:     Play framework
-        members:
+                email: tbanks@sample.com
             - !!models.User
-                email: guillaume@sample.com
+                email: ccampbell@sample.com
             - !!models.User
-                email: erwan@sample.com
-                
-    - !!models.Project
-        id:         3
-        name:       Website 
-        folder:     Play framework
-        members:
+                email: rclark@sample.com
             - !!models.User
-                email: guillaume@sample.com
+                email: ddriegen@sample.com
             - !!models.User
-                email: maxime@sample.com
-
-    - !!models.Project
-        id:         4
-        name:       Secret project 
-        folder:     Zenexity
-        members:
+                email: eheming@sample.com
             - !!models.User
-                email: guillaume@sample.com
+                email: kkloss@sample.com
             - !!models.User
-                email: maxime@sample.com
-            - !!models.User
-                email: sadek@sample.com
-            - !!models.User
-                email: erwan@sample.com
-                
-    - !!models.Project
-        id:         5
-        name:       Playmate
-        folder:     Zenexity
-        members:
-            - !!models.User
-                email: maxime@sample.com
-            
-    - !!models.Project
-        id:         6
-        name:       Things to do
-        folder:     Personal
-        members:
-            - !!models.User
-                email: guillaume@sample.com
-
-    - !!models.Project
-        id:         7
-        name:       Play samples
-        folder:     Zenexity
-        members:
-            - !!models.User
-                email: guillaume@sample.com
-            - !!models.User
-                email: maxime@sample.com
-                
-    - !!models.Project
-        id:         8
-        name:       Private
-        folder:     Personal
-        members:
-            - !!models.User
-                email: guillaume@sample.com
-
-    - !!models.Project
-        id:         9
-        name:       Private
-        folder:     Personal
-        members:
-            - !!models.User
-                email: erwan@sample.com
-                
-    - !!models.Project
-        id:         10
-        name:       Private
-        folder:     Personal
-        members:
-            - !!models.User
-                email: sadek@sample.com
-                
-    - !!models.Project
-        id:         11
-        name:       Private
-        folder:     Personal
-        members:
-            - !!models.User
-                email: maxime@sample.com
-                
-# Task
-
-tasks:
-    
-    - !!models.Task
-        title:      Fix the documentation
-        done:       false
-        folder:     Todo
-        project:    !!models.Project
-                        id: 1
-        assignedTo: !!models.User
-                        email: guillaume@sample.com
-                        
-    - !!models.Task
-        title:      Prepare the beta release
-        done:       false
-        folder:     Urgent
-        dueDate:    2011-11-15
-        project:    !!models.Project
-                        id: 1
-        assignedTo: !!models.User
-                        email: guillaume@sample.com
-
-    - !!models.Task
-        title:      Buy some milk
-        done:       false
-        folder:     Todo
-        project:    !!models.Project
-                        id: 9
-
-    - !!models.Task
-        title:      Check 1.2.4-RC2
-        done:       false
-        folder:     Todo
-        dueDate:    2011-11-18
-        project:    !!models.Project
-                        id: 2
-        assignedTo: !!models.User
-                        email: guillaume@sample.com
-                        
-    - !!models.Task
-        title:      Finish zentask integration
-        done:       true
-        folder:     Todo
-        dueDate:    2011-11-15
-        project:    !!models.Project
-                        id: 7
-        assignedTo: !!models.User
-                        email: maxime@sample.com
-                        
-    - !!models.Task
-        title:      Release the secret project
-        done:       false
-        folder:     Todo
-        dueDate:    2012-01-01
-        project:    !!models.Project
-                        id: 4
-        assignedTo: !!models.User
-                        email: sadek@sample.com
+                email: alima@sample.com
             

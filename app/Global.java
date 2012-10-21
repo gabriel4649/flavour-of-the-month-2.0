@@ -30,8 +30,6 @@ public class Global extends GlobalSettings {
                     Ebean.saveManyToManyAssociations(project, "members");
                 }
 
-                // Insert tasks
-                Ebean.save(all.get("tasks"));
                 
             }
         }
