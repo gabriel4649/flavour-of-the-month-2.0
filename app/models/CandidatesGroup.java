@@ -1,6 +1,7 @@
 package models;
 
 import java.util.*;
+
 import javax.persistence.*;
 
 import play.db.ebean.*;
@@ -40,8 +41,12 @@ public class CandidatesGroup extends Model {
      */
     public static List<CandidatesGroup> findInvolving(String user) {
         return find.where()
-            .eq("members.email", user)
-            .findList();
+            .eq("members.email", user).findList();
+    }
+    
+    public static CandidatesGroup findById(Long id)
+    {
+    	return find.byId(id);
     }
     
     /**
