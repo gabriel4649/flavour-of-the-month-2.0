@@ -44,7 +44,7 @@ public class Application extends Controller {
         } else {
             session("email", loginForm.get().email);
             return redirect(
-                routes.Projects.index()
+                routes.Application.index()
             );
         }
     }
@@ -59,35 +59,31 @@ public class Application extends Controller {
             routes.Application.login()
         );
     }
-  
-    // -- Javascript routing
     
-    public static Result javascriptRoutes() {
-        response().setContentType("text/javascript");
-        return ok(
-            Routes.javascriptRouter("jsRoutes",
-            
-                // Routes for Projects
-                controllers.routes.javascript.Projects.add(), 
-                controllers.routes.javascript.Projects.delete(), 
-                controllers.routes.javascript.Projects.rename(),
-                controllers.routes.javascript.Projects.addGroup(), 
-                controllers.routes.javascript.Projects.deleteGroup(), 
-                controllers.routes.javascript.Projects.renameGroup(),
-                controllers.routes.javascript.Projects.addUser(), 
-                controllers.routes.javascript.Projects.removeUser(), 
-                
-                // Routes for Tasks
-                controllers.routes.javascript.Tasks.addFolder(), 
-                controllers.routes.javascript.Tasks.renameFolder(), 
-                controllers.routes.javascript.Tasks.deleteFolder(), 
-                controllers.routes.javascript.Tasks.index(),
-                controllers.routes.javascript.Tasks.add(), 
-                controllers.routes.javascript.Tasks.update(), 
-                controllers.routes.javascript.Tasks.delete()
-                
-            )
-        );
-    }
+    // -- For testing only, will be removed later
+    
+    public static Result index() {
+        return ok(index.render("Your new application is ready."));
+      }
+
+    public static Result requests() {
+    	    return ok(requests.render("Your new application is ready."));
+    	  }
+      
+    public static Result chat() {
+    	    return ok(chat.render("Your new application is ready."));
+    	  }
+      
+    public static Result vote() {
+    	    return ok(vote.render("Your new application is ready."));
+    	  }
+      
+    public static Result viewMatches() {
+    	    return ok(viewMatches.render("Your new application is ready."));
+    	  }
+      
+    public static Result myProfile() {
+    	    return ok(myProfile.render("Your new application is ready."));
+    	  }
 
 }

@@ -9,26 +9,12 @@ import java.util.*;
 import models.*;
 
 import views.html.*;
-import views.html.projects.*;
 
 /**
  * Manage projects related operations.
  */
 @Security.Authenticated(Secured.class)
 public class Projects extends Controller {
-  
-    /**
-     * Display the dashboard.
-     */
-    public static Result index() {
-        return ok(
-            dashboard.render(
-                Project.findInvolving(request().username()),
-                Task.findTodoInvolving(request().username()),
-                User.find.byId(request().username())
-            )
-        );
-    }
 
     // -- Projects
 
@@ -41,7 +27,7 @@ public class Projects extends Controller {
             form().bindFromRequest().get("group"),
             request().username()
         );
-        return ok(item.render(newProject));
+        return ok();
     }
     
     /**
@@ -73,15 +59,6 @@ public class Projects extends Controller {
     }
 
     // -- Project groups
-
-    /**
-     * Add a new project group.
-     */
-    public static Result addGroup() {
-        return ok(
-            group.render("New group", new ArrayList<Project>())
-        );
-    }
   
     /**
      * Delete a project group.

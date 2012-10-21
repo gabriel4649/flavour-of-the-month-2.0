@@ -1,0 +1,29 @@
+@(message: String) @main("Flavour of the Month") {
+
+<div class="hero-unit">
+	<h2>3 Minute Video Chat</h2>
+	<p>Within the 3 minutes, both parties can get a first impression of
+		each other and decide whether to exchange contact details. So be quick
+		to make up your mind!</p>
+
+</div>
+<div class="well" id="video">
+	<h4>Time to begin/end: 180-video.duration();</h4>
+	<div class="progress">
+		<div class="bar bar-success" style="width: 35%;"></div>
+		<div class="bar bar-warning" style="width: 20%;"></div>
+		<div class="bar bar-danger" style="width: 10%;"></div>
+	</div>
+
+	<video width="900" height="600" controls="controls" autoplay="autoplay">
+		<source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  <source src="movie.webm" type="video/webm">
+Your browser does not support video
+
+
+
+
+	</video>
+</div>
+}
