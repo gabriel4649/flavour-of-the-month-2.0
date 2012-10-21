@@ -1,40 +1,44 @@
-@(message: String)
+@(users: List[User]) @main("Flavour of the Month") {
 
-@main("Flavour of the Month") {
+<!-- Main hero unit for a primary marketing message or call to action -->
+<h1>Requests Page</h1>
 
- <!-- Main hero unit for a primary marketing message or call to action -->
-      <div>
-      <h1>Requests Page </h1>
-      <img src="http://codmw3.me/wp-content/uploads/2011/10/Pirate-Vs-Ninja-thumb.png" alt="alt" height="100" width ="800">
-      </div>
-      
-      <div class="hero-unit">
-        <h2>Know more people at Eventually Friends!</h2>
-        <p>Eventually Friends helps people to make new friends online. Although social media has developed tremendously, 
-        they mostly focus on maintaining existing friendships, keeping in touch. 
-        Eventually friends allows you to meet new people online and widen your social circle.</p>
-        
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
+<div class="hero-unit">
+	<h2>Accept Requests</h2>
+	<p>The following people have sent you a request. You can choose to
+		accept or reject their request.</p>
+	<div class="row">
+		@for(user <- users){
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Flavour of the month</h2>
-          <p>The monthly theme adds an element of fun and keeps users active. </p>
-          <p><a class="btn" href="#">Details &raquo;</a></p>
-        </div>
-        
-        <div class="span4">
-          <h2>10 profiles in 3 days</h2>
-          <p>Instead of spending hours looking through profiles, give it a try and talk to someone! </p>
-          <p><a class="btn" href="#">Details &raquo;</a></p>
-       </div>
-        
-        <div class="span4">
-          <h2>3 minute video Chat</h2>
-          <p>The video chat allows people to see each other in real time. </p>
-          <p><a class="btn" href="#">Details &raquo;</a></p>
-        </div>
-      </div>
+		<center>
+			<div class="span4">
+				<h2>Flavour of the month</h2>
+				<p>The monthly theme adds an element of fun and keeps users
+					active.</p>
+				<div class="btn-group">
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						Respond to request <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<!-- dropdown menu links -->
+						<li>Accept</li>
+						<li>Reject</li>
+					</ul>
+				</div>
+
+			</div>
+		</center>
+		}
+
+	</div>
+
+
+
+</div>
+
+
+
+
+<!-- Example row of columns -->
+
 }

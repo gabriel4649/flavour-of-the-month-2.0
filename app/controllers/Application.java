@@ -67,7 +67,7 @@ public class Application extends Controller {
       }
 
     public static Result requests() {
-    	    return ok(requests.render("Your new application is ready."));
+    	    return ok(requests.render(User.findAll()));
     	  }
       
     public static Result chat() {
