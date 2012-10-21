@@ -1,19 +1,11 @@
 @(users: List[User])
-<!--(matches: List[match]) -->
 @main("Flavour of the Month") {
 <style type="text/css">
-#button {
-	margin: auto;
-	position: relative;
-	left: 60px;
-	top: 10px;
-}
-
 #matches {
 	margin: auto;
 	position: relative;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
 </style>
 
@@ -25,13 +17,14 @@
 		making new friends now!</p>
 </div>
 
-<div id="matches" class="row-fluid">
+<div class="row-fluid">
 
 	@for(user <- users){
-	<div class="span5 offset 1">
-		<p>@user.toString()</p>
+	<div class="span5 offset 1" id = "matches">
+		<center>
 		<img src="http://thecontentwrangler.com/wp-content/uploads/2011/08/User.png" width=100 />
-		<button id="button" type=submit class="btn btn-info">Vote!</button>
+		<p><button id="button" type=submit class="btn btn-info">Request to Chat with @user.name</button></p>
+		</center>
 	</div>
 	}
 </div>
