@@ -75,7 +75,7 @@ public class Application extends Controller {
     	  }
       
     public static Result vote() {
-    	    return ok(vote.render("Your new application is ready."));
+    	    return ok(vote.render(User.findAll()));
     	  }
       
     public static Result viewMatches() {

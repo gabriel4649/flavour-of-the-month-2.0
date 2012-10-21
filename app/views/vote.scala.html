@@ -1,4 +1,4 @@
-@(message: String)
+@(users: List[User])
 @main("Flavour of the Month") {
 <style type="text/css">
 
@@ -14,11 +14,12 @@ div {
 <h1>Vote Page</h1>
 
 <div class="row-fluid">
-	<div class="span3">
-		<h2>User.getUsername()</h2>
-		<img src=User.getImage() width=100 />
-		</p>
+	@for(user <- users){
+	<div class="span4">
+		<p>@user.toString()</p>
+		<img src="http://thecontentwrangler.com/wp-content/uploads/2011/08/User.png" width=100 />
 		<button id="button" type=submit class="btn btn-info">Vote!</button>
 	</div>
+	}
 </div>
 }
