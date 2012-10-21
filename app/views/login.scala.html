@@ -1,51 +1,58 @@
 @(form: Form[Application.Login])
+	
+@main("Login") {
 
-<html>
-    <head>
-        <title>Zentasks</title>
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
-    </head>
-    <body>
-        
-        <header>
-            <a href="@routes.Application.index" id="logo"><span>Zen</span>tasks</a>
-        </header>
-        
-        @helper.form(routes.Application.authenticate) {
-            
-            <h1>Sign in</h1>
-            
-            @if(form.hasGlobalErrors) { 
+@helper.form(routes.Application.authenticate) {
+<h1>Log in</h1>  
+
+@if(form.hasGlobalErrors) { 
                 <p class="error">
                     @form.globalError.message
                 </p>
             }
             
-            @if(flash.contains("success")) {
+@if(flash.contains("success")) {
                 <p class="success">
                     @flash.get("success")
                 </p>
             }
+             
             
-            <p>
-                <input type="email" name="email" placeholder="Email" value="@form("email").value">
-            </p>
-            <p>
-                <input type="password" name="password" placeholder="Password">
-            </p>
-            <p>
-                <button type="submit">Login</button>
-            </p>
-            
-        }
-        
-        <p class="note">
-            Try <em>guillaume@@sample.com</em> with <em>secret</em> as password.
-        </p>
-            
-    </body>
-</html>
-    
+
+<p>If you don't have an account, <a href="/signup">Register Here</a>.</p>
+<form accept-charset="UTF-8" action="/sessions" class="form-stacked" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="5Cua4BQodZhG4ITApsnttGXKFTjj5s5hzamOlvxxM8Q=" type="hidden"></div>  
+<fieldset>	
+	
+<div class="clearfix">  
+    <label for="username">Username</label>  
+	<div class="input"> 
+    <input type="email" autofocus="autofocus" name="email" placeholder="Email" value="@form("email").value>
+  	</div>
+</div>  
+
+<div class="clearfix">  
+    <label for="password">Password</label>  
+	<div class="input">
+    	<input name="password" type="password" placeholder="Password">  
+  	</div>
+</div>
+  
+<div class="clearfix"> 
+	<input id="remember_me" name="remember_me" value="1" type="checkbox">  
+    <span>Remember Me</span>   
+<fieldset>	
+
+  <div class="actions"><input class="btn primary" name="commit" value="Log in" type="submit"></div>  
 
 
+<!-- &copy; ACM5PT 2011: Carlos Andreu, Richard Kaufman, Gabriel Perez, Daniel Gonzalez, Francisco De La Cruz -->
+
+	
+</fieldset></div> <!--end container-->
+
+
+</fieldset></form>
+
+}
+
+}
