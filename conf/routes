@@ -15,7 +15,7 @@ GET     /about                              controllers.InfoPages.about()
 GET     /contact				            controllers.InfoPages.contact()
 
 # Matches         
-#GET     /matches                           controllers.Matches.getMatches()
+GET     /matches                           controllers.Application.getMatches()
 
 # Video Chat
 GET     /chat                               controllers.Application.chat()
