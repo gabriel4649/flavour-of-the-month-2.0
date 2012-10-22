@@ -22,7 +22,7 @@ public class Projects extends Controller {
      * Add a project.
      */
     public static Result add() {
-        CandidatesGroup newProject = CandidatesGroup.create(
+        Project newProject = Project.create(
             "New project", 
             form().bindFromRequest().get("group"),
             request().username()
@@ -36,7 +36,7 @@ public class Projects extends Controller {
     public static Result rename(Long project) {
         if(Secured.isMemberOf(project)) {
             return ok(
-                CandidatesGroup.rename(
+                Project.rename(
                     project, 
                     form().bindFromRequest().get("name")
                 )
@@ -51,7 +51,7 @@ public class Projects extends Controller {
      */
     public static Result delete(Long project) {
         if(Secured.isMemberOf(project)) {
-            CandidatesGroup.find.ref(project).delete();
+            Project.find.ref(project).delete();
             return ok();
         } else {
             return forbidden();
@@ -64,7 +64,7 @@ public class Projects extends Controller {
      * Delete a project group.
      */
     public static Result deleteGroup(String group) {
-        CandidatesGroup.deleteInFolder(group);
+        Project.deleteInFolder(group);
         return ok();
     }
   
@@ -73,7 +73,7 @@ public class Projects extends Controller {
      */
     public static Result renameGroup(String group) {
         return ok(
-            CandidatesGroup.renameFolder(group, form().bindFromRequest().get("name"))
+            Project.renameFolder(group, form().bindFromRequest().get("name"))
         );
     }
   
@@ -84,7 +84,7 @@ public class Projects extends Controller {
      */
     public static Result addUser(Long project) {
         if(Secured.isMemberOf(project)) {
-            CandidatesGroup.addMember(
+            Project.addMember(
                 project,
                 form().bindFromRequest().get("user")
             );
@@ -99,7 +99,7 @@ public class Projects extends Controller {
      */
     public static Result removeUser(Long project) {
         if(Secured.isMemberOf(project)) {
-            CandidatesGroup.removeMember(
+            Project.removeMember(
                 project,
                 form().bindFromRequest().get("user")
             );

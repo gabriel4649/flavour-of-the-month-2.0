@@ -79,7 +79,8 @@ public class Application extends Controller {
     	  }
       
     public static Result getMatches() {
-    	    return ok(viewMatches.render(User.findAll()));
+    	long id = 1;    
+    	return ok(viewMatches.render(Project.findById(id)));
     	  }
       
     public static Result myProfile() {

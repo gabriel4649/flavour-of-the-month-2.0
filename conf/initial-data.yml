@@ -62,9 +62,9 @@ users:
     
 # Projects
 
-matches_groups:
+projects:
 
-    - !!models.candidatesGroup
+    - !!models.Project
         id:         1
         name:       Play 2.0   
         folder:     Play framework

@@ -21,7 +21,7 @@ public class Secured extends Security.Authenticator {
     // Access rights
     
     public static boolean isMemberOf(Long project) {
-        return CandidatesGroup.isMember(
+        return Project.isMember(
             project,
             Context.current().request().username()
         );

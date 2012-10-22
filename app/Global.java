@@ -24,10 +24,10 @@ public class Global extends GlobalSettings {
                 Ebean.save(all.get("users"));
 
                 // Insert projects
-                Ebean.save(all.get("matches_groups"));
-                for(Object matchesGroup: all.get("matches_groups")) {
+                Ebean.save(all.get("projects"));
+                for(Object project: all.get("projects")) {
                     // Insert the project/user relation
-                    Ebean.saveManyToManyAssociations(matchesGroup, "members");
+                    Ebean.saveManyToManyAssociations(project, "members");
                 }
 
                 

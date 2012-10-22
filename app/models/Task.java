@@ -32,7 +32,7 @@ public class Task extends Model {
     public String folder;
     
     @ManyToOne
-    public CandidatesGroup project;
+    public Project project;
     
     // -- Queries
     
@@ -86,7 +86,7 @@ public class Task extends Model {
      * Create a task
      */
     public static Task create(Task task, Long project, String folder) {
-        task.project = CandidatesGroup.find.ref(project);
+        task.project = Project.find.ref(project);
         task.folder = folder;
         task.save();
         return task;
