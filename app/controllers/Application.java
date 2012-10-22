@@ -62,6 +62,12 @@ public class Application extends Controller {
 				routes.Application.login()
 				);
 	}
+	
+	public static Result signup()
+	{
+		return ok(signup.render());
+		
+	}
 
 	// -- For testing only, will be removed later
 

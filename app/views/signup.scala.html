@@ -1,0 +1,45 @@
+@main("Singup") {
+<h1>Sign Up</h1> 
+ 
+<p>If you already have an account, <a href="@routes.Application.login()">Login Here</a>.</p>
+
+
+
+<form accept-charset="UTF-8" action="/users" class="form-stacked" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="C9IuyCryH2ACsUV0KVzAsTm246yLBZD0ER/UrvlCQdo=" /></div>  
+
+<fieldset>	
+<div class="clearfix">
+    <label for="user_username">Username</label> 
+ 	<div class="input">
+    	<input autofocus="autofocus" id="user_username" name="user[username]" size="30" type="text" />  
+	</div>
+</div>
+
+<div class="clearfix">
+    <label for="user_email">Email</label> 
+	<div class="input"> 
+    	<input id="user_email" name="user[email]" size="30" type="text" />  
+  </div>
+</div>
+
+<div class="clearfix">  
+    <label for="user_password">Password</label>  
+	<div class="input">
+    	<input id="user_password" name="user[password]" size="30" type="password" />  
+    </div>
+</div>
+
+<div class="clearfix">  
+    <label for="user_password_confirmation">Password confirmation</label>  
+	<div class="input">
+    	<input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />  
+    </div> 
+</div>
+</fieldset>
+
+<div class="actions">
+  <input class="btn primary" name="commit" type="submit" value="Submit" />
+</div>
+
+</form>
+}
