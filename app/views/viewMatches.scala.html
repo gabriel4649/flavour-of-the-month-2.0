@@ -1,4 +1,4 @@
-@(users: Project)
+@(users: List[User])
 @main("Flavour of the Month") {
 <style type="text/css">
 #matches {
@@ -17,10 +17,18 @@
 		making new friends now!</p>
 </div>
 
-<h1>@users</h1>
 
 
-
+<div class="row-fluid">
+	@for(user <- users){
+	<div class="span5 offset1" id = "matches">
+		<center>
+		<img src="http://thecontentwrangler.com/wp-content/uploads/2011/08/User.png" width=100 />
+		<p><button id="button" type=submit class="btn btn-info">Request to Chat with @user.name</button></p>
+		</center>
+	</div>
+	}
+</div>
 
 
 <br>

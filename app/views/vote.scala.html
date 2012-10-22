@@ -1,20 +1,36 @@
-@(users: List[User])
-@main("Flavour of the Month") {
+@(users: List[User]) @main("Flavour of the Month") {
 <style type="text/css">
-
-
 </style>
 
-
-<h1>Vote Page</h1>
+<div class="hero-unit">
+	<h2>Vote for other users</h2>
+	<p>Look at other users' profile pictures and vote for those that
+		stand out from the rest. Choose from: "Nice Pose", "Adventurous" and
+		"Creativity Overflow".</p>
+</div>
 
 <div class="row-fluid">
 	@for(user <- users){
 	<div class="span3">
 		<center>
-		<p>@user.name</p>
-		<img src="http://thecontentwrangler.com/wp-content/uploads/2011/08/User.png" width=100 />
-		<p><button id="button" type=submit class="btn btn-info">Vote!</button></p>
+			<p>@user.name</p>
+			<img
+				src="http://thecontentwrangler.com/wp-content/uploads/2011/08/User.png"
+				width=80 />
+			<p>
+			<div class="btn-toolbar">
+				<div class="btn-group">
+					<button class="btn btn-mini"> Nice Pose
+					<i class="icon-thumbs-up"></i></button>
+					
+					<button class="btn btn-mini">Adventurous
+					<i class="icon-thumbs-up"></i></button>
+					
+					<button class="btn btn-mini">Creativity Overflow
+					<i class="icon-thumbs-up"></i></button>
+				</div>
+			</div>
+			</p>
 		</center>
 	</div>
 	}
