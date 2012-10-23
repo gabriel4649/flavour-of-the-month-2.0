@@ -114,5 +114,11 @@ public class Application extends Controller {
 		User u1 = User.findByEmail(user1);
 		return ok(myProfile.render(u1));
 	}
+	
+	public static Result viewProfile(String username) {
+		User u = User.findByEmail(username);
+		return ok(myProfile.render(u));
+	}
+	
 
 }

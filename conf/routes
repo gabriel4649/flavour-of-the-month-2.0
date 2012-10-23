@@ -26,6 +26,7 @@ GET     /requests                           controllers.Application.requests()
 
 #Profiles
 GET     /my_profile                         controllers.Application.myProfile()
+GET     /view_profile/:user                 controllers.Application.viewProfile(user: String)
 GET     /vote                               controllers.Application.vote()
 
 # Map static resources from the /public folder to the /public path
