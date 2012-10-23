@@ -29,7 +29,7 @@ users:
         email:      laldridge@sample.com
         name:       Lily Aldridge
         password:   secret
-        image:      "/assets/images/users/laldrige.jpg"
+        image:      "/assets/images/users/laldridge.jpg"
         age:        26
         location:   Atlanta
         occupation: Student
