@@ -1,8 +1,7 @@
 @(user: User) @main("Flavour of the Month") {
 
 <!-- Main hero unit for a primary marketing message or call to action -->
-<div>
-
+<div class="container-fluid">
 	<div class="hero-unit">
 		<center>
 			<h1>My Profile Page</h1>
@@ -20,11 +19,7 @@
 
 			<div class="span5 offset1">
 				<h2>About myself</h2>
-				<p>I am a person who likes sports, likes to read. I spent my
-					weekends helping out at the Salvation Army. I also go on overseas
-					volunteer trips to different countries to help people in need. When
-					I am not helping others, I spend my free time at home reading books
-					of various genres.</p>
+				<p>@user.description</p>
 				<a href="#" class="pull-right">edit my profile</a>
 			</div>
 
@@ -34,24 +29,20 @@
 			<center>
 			<div class="span8 offset1">
 				<table class="table table-bordered table-hover table-striped">
-					<tr id="Gender" class="info">
-						<td>Gender</td>
-						<td>Male</td>
-					</tr>
 
 					<tr id="Age" class="info">
 						<td>Age</td>
-						<td>25</td>
+						<td>@user.age</td>
 					</tr>
 
 					<tr id="Location" class="info">
 						<td>Location</td>
-						<td>Georgia, Atlanta</td>
+						<td>@user.location</td>
 					</tr>
 
 					<tr id="Occupation" class="info">
 						<td>Occupation</td>
-						<td>Self-employed</td>
+						<td>@user.occupation</td>
 					</tr>
 
 				</table>

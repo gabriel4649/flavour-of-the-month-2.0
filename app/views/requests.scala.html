@@ -1,11 +1,12 @@
 @(users: List[User]) @main("Flavour of the Month") {
 
-<div class="hero-unit">
-	<h2>Accept/Reject Requests</h2>
-	<p>The following people have sent you a request. You can choose to
-		accept or reject their request.</p>
+<div class="container-fluid">
+	<div class="hero-unit">
+		<h2>Accept/Reject Requests</h2>
+		<p>The following people have sent you a request. You can choose to
+			accept or reject their request.</p>
+	</div>
 </div>
-
 <div class="row">
 	<div class="span10 offset1">
 		<div class="row">
@@ -13,9 +14,9 @@
 			<center>
 				<div class="span2 offset1">
 					<center>
-						<img
-							src=@user.image
-							width=100>
+						<a href="@routes.Application.viewProfile(user.email)"> <img
+							src=@user.image width=100>
+						</a>
 						<h4>@user.name</h4>
 						<div class="btn-group">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
