@@ -18,16 +18,15 @@
 
 
 <div class="container">
-<center>
-	<div class="row">
-		<div class="span10 offset1">
-			<div class="row">
-				@for(user <- users){
+	<center>
+		<div class="row">
+			<div class="span10 offset1">
+				<div class="row">
+					@for(user <- users){
 					<div class="span2" id="matches">
 						<center>
-							<img
-								src="http://www.clker.com/cliparts/b/1/f/a/1195445301811339265dagobert83_female_user_icon.svg.med.png"
-								width=150 />
+							<a href="@routes.Application.viewProfile(user.name)"> <img src=@user.image width=150 />
+							</a>
 							<h4></h4>
 							<button id="button" type=submit class="btn btn-primary btn-small">
 								Chat with
@@ -35,10 +34,10 @@
 							</button>
 						</center>
 					</div>
-				}
+					}
+				</div>
 			</div>
 		</div>
-	</div>
 	</center>
 </div>
 

@@ -8,7 +8,7 @@ users:
         email:      edilbert@sample.com
         name:       Eric Dilbert
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -19,7 +19,7 @@ users:
         email:      acooper@sample.com
         name:       Alice Cooper
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -29,7 +29,7 @@ users:
         email:      laldridge@sample.com
         name:       Lily Aldridge
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -39,7 +39,7 @@ users:
         email:      mandersen@sample.com
         name:       May Andersen
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -49,7 +49,7 @@ users:
         email:      tbanks@sample.com
         name:       Tyra Banks
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -59,7 +59,7 @@ users:
         email:      ccampbell@sample.com
         name:       Carla Campbell
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -69,7 +69,7 @@ users:
         email:      rclark@sample.com
         name:       Rachel Clark
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -79,7 +79,7 @@ users:
         email:      ddriegen@sample.com
         name:       Dewi Driegen
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -89,7 +89,7 @@ users:
         email:      eheming@sample.com
         name:       Emma Heming
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -99,7 +99,7 @@ users:
         email:      kkloss@sample.com
         name:       Karlie Kloss
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
@@ -109,7 +109,7 @@ users:
         email:      alima@sample.com
         name:       Adriana Lima
         password:   secret
-        image:      "public/images/users/penny.jpg"
+        image:      "/assets/images/users/penny.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
