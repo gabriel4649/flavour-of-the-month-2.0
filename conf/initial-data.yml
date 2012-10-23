@@ -9,6 +9,10 @@ users:
         name:       Eric Dilbert
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
     
 #demo matches female 1 to 10
     - !!models.User
@@ -16,60 +20,100 @@ users:
         name:       Alice Cooper
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
     
     - !!models.User
         email:      laldridge@sample.com
         name:       Lily Aldridge
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
     
     - !!models.User
         email:      mandersen@sample.com
         name:       May Andersen
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
 
     - !!models.User
         email:      tbanks@sample.com
         name:       Tyra Banks
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
 
     - !!models.User
         email:      ccampbell@sample.com
         name:       Carla Campbell
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
 
     - !!models.User
         email:      rclark@sample.com
         name:       Rachel Clark
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
 
     - !!models.User
         email:      ddriegen@sample.com
         name:       Dewi Driegen
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
 
     - !!models.User
         email:      eheming@sample.com
         name:       Emma Heming
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
 
     - !!models.User
         email:      kkloss@sample.com
         name:       Karlie Kloss
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
 
     - !!models.User
         email:      alima@sample.com
         name:       Adriana Lima
         password:   secret
         image:      "public/images/users/penny.jpg"
+        age:        27
+        location:   Atlanta
+        occupation: Student
+        description: I love Star Wars, Star Trek and Chocolate
     
 # Projects
 

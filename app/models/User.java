@@ -2,10 +2,14 @@ package models;
 
 import java.util.*;
 import javax.persistence.*;
+import javax.validation.Valid;
 
 import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
+import play.data.validation.Constraints.Max;
+import play.data.validation.Constraints.Min;
+import play.data.validation.Constraints.Required;
 
 import com.avaje.ebean.*;
 
@@ -29,6 +33,18 @@ public class User extends Model {
     
     @Constraints.Required
     public String image;
+    
+    @Constraints.Required
+    public String age;
+    
+    @Constraints.Required
+    public String location;
+    
+    @Constraints.Required
+    public String occupation;
+    
+    @Constraints.Required
+    public String description;
     
     // -- Queries
     
