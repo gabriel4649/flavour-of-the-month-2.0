@@ -1,43 +1,37 @@
 @(users: List[User]) @main("Flavour of the Month") {
 
-<!-- Main hero unit for a primary marketing message or call to action -->
-<h1>Requests Page</h1>
-
 <div class="hero-unit">
 	<h2>Accept/Reject Requests</h2>
 	<p>The following people have sent you a request. You can choose to
 		accept or reject their request.</p>
-	<div class="row">
-		@for(user <- users){
-
-		<center>
-			<div class="span4">
-				<h2>@user.name</h2>
-				<img src = "http://thecontentwrangler.com/wp-content/uploads/2011/08/User.png" width = 150>
-				<div class="btn-group">
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-						Respond to request <span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<!-- dropdown menu links -->
-						<li>Accept</li>
-						<li>Reject</li>
-					</ul>
-				</div>
-
-			</div>
-		</center>
-		}
-
-	</div>
-
-
-
 </div>
 
-
-
-
-<!-- Example row of columns -->
-
+<div class="row">
+	<div class="span10 offset1">
+		<div class="row">
+			@for(user <- users){
+			<center>
+				<div class="span2 offset1">
+					<center>
+						<img
+							src="http://www.clker.com/cliparts/b/1/f/a/1195445301811339265dagobert83_female_user_icon.svg.med.png"
+							width=100>
+						<h4>@user.name</h4>
+						<div class="btn-group">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								Respond to request <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<!-- dropdown menu links -->
+								<li>Accept</li>
+								<li>Reject</li>
+							</ul>
+						</div>
+					</center>
+				</div>
+			</center>
+			}
+		</div>
+	</div>
+</div>
 }

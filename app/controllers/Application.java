@@ -80,8 +80,8 @@ public class Application extends Controller {
 		String user2 = "laldridge@sample.com";
 		String user3 = "mandersen@sample.com";
 		User u1 = User.findByEmail(user1);
-		User u2 = User.findByEmail(user1);
-		User u3 = User.findByEmail(user1);
+		User u2 = User.findByEmail(user2);
+		User u3 = User.findByEmail(user3);
 		List<User> list = new ArrayList<User>();
 		list.add(u1);
 		list.add(u2);
