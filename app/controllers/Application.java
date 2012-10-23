@@ -76,9 +76,9 @@ public class Application extends Controller {
 	}
 
 	public static Result requests() {
-		String user1 = "acooper@sample.com";
+		String user1 = "mkerr@sample.com";
 		String user2 = "laldridge@sample.com";
-		String user3 = "mandersen@sample.com";
+		String user3 = "aambrosio@sample.com";
 		User u1 = User.findByEmail(user1);
 		User u2 = User.findByEmail(user2);
 		User u3 = User.findByEmail(user3);
