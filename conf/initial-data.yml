@@ -8,7 +8,7 @@ users:
         email:      edilbert@sample.com
         name:       Eric Dilbert
         password:   secret
-        image:      "/assets/images/users/original/edilbert.jpg"
+        image:      "/assets/images/users/original/edilbert2.jpg"
         age:        27
         location:   Atlanta
         occupation: Student
