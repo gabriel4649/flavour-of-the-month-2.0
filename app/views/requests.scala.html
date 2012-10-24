@@ -3,8 +3,8 @@
 <div class="container-fluid">
 	<div class="hero-unit">
 		<h2>Send Challenges</h2>
-		<p>The following people have sent you a request. You can choose to
-			accept the request and send a video reply or ignore their request.</p>
+		<p>The following people want to be challenged by you!
+		Send them interesting questions to get to know them better.</p>
 	</div>
 </div>
 
@@ -24,16 +24,12 @@
 
 
 						</a>
+						
+							<a href="@routes.Matches.sendRequest(user.email)">
+						<button id="button" type="submit" class="btn btn-mini btn-success pull-right">Send Challenge</button>
 					</center>
 				</div>
 
-				<div class="span4">
-					<br> <br>
-					<p>Insert the questions here. Use "@user + ._____" eg. "@user +
-						.questions" to place the questions here.</p>
-					<a href="@routes.Matches.uploadVideo(user.email)">
-						<button id="button" type="submit" class="btn btn-mini btn-success pull-right">Accept Request</button>
-				</div>
 			</center>
 		</div>
 		<br> <br> }

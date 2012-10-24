@@ -25,7 +25,7 @@ GET     /upload_video/:user                 controllers.Matches.uploadVideo(user
 
 # Video Chat
 GET     /view_videos                        controllers.Matches.viewVideos()
-GET     /requests                           controllers.Matches.requests()
+GET     /challenge                          controllers.Matches.requests()
 
 #Profiles
 GET     /my_profile                         controllers.Matches.myProfile()
