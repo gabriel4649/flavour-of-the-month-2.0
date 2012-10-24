@@ -49,6 +49,8 @@ public class User extends Model {
     @Constraints.Required
     public String description;
     
+    public String challenger;
+    
     // -- Queries
     
     public static Model.Finder<String,User> find = new Model.Finder(String.class, User.class);
@@ -66,6 +68,7 @@ public class User extends Model {
     public static User findByEmail(String email) {
         return find.where().eq("email", email).findUnique();
     }
+    
     
     /**
      * Authenticate a User.

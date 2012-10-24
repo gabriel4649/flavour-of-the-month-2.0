@@ -11,6 +11,7 @@ create table account (
   hometown                  varchar(255),
   occupation                varchar(255),
   description               varchar(255),
+  challenger                varchar(255),
   constraint pk_account primary key (email)
 );
 

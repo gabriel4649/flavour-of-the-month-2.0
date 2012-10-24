@@ -20,6 +20,7 @@ GET     /contact				            controllers.InfoPages.contact()
 # Matches         
 GET     /matches                            controllers.Matches.getMatches()
 GET     /send_request/:user                 controllers.Matches.sendRequest(user: String)
+POST    /send_challenge/:user               controllers.Matches.sendChallenge(user: String)
 GET     /upload_video/:user                 controllers.Matches.uploadVideo(user: String)
 
 # Video Chat

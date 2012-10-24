@@ -1,4 +1,4 @@
-@(users: List[User]) @loggedmain("Matches") {
+@(users: List[User], form: Form[Matches.Challenge]) @loggedmain("Matches") {
 <style type="text/css">
 #matches {
 	margin: auto;
@@ -36,12 +36,17 @@
 								src=@user.image width=250 />
 							</a>
 							<h4></h4>
-							<a href="@routes.Matches.sendRequest(user.email)"><button
-									id="button" type="submit" class="btn btn-mini">
-									<strong>Send request to @user.name</strong>
+							@helper.form(action = routes.Matches.sendChallenge(user.email)) {
+    
 
-								</button></a>
+							<button
+									id="button" type="submit" class="btn btn-mini">
+									<strong>Tell @user.name to challenge you!</strong>
+
+							</button>
+							}
 						</center>
+						
 					</div>
 					}
 				</div>

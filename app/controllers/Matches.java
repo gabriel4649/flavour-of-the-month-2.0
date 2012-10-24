@@ -6,6 +6,8 @@ import play.data.*;
 
 import java.util.*;
 
+import controllers.Application.Login;
+
 import models.*;
 
 import views.html.*;
@@ -13,18 +15,21 @@ import views.html.*;
 @Security.Authenticated(Secured.class)
 public class Matches extends Controller {
 	
+	static Form<Challenge> challengeForm = form(Challenge.class);
+	
 	public static Result requests() {
-		String user1 = "mkerr@sample.com";
-		String user2 = "laldridge@sample.com";
-		String user3 = "aambrosio@sample.com";
-		User u1 = User.findByEmail(user1);
-		User u2 = User.findByEmail(user2);
-		User u3 = User.findByEmail(user3);
 		List<User> list = new ArrayList<User>();
-		list.add(u1);
-		list.add(u2);
-		list.add(u3);
-		return ok(requests.render(list));
+		User currUser = User.findByEmail(request().username());
+		User challenger = User.findByEmail(currUser.challenger);
+		if (challenger != null)
+		{
+			list.add(challenger);
+			return ok(requests.render(list));
+		}
+		else
+		{
+			return ok(norequests.render());
+		}
 	}
 
 	public static Result vote() {
@@ -36,11 +41,12 @@ public class Matches extends Controller {
 	}
 
 	public static Result getMatches() {
+		Form<Challenge> filledForm = challengeForm.bindFromRequest();
 		long id = 1;
 		Project p = Project.findById(id);
 		List<User> matchesList = new ArrayList<User>();
 		matchesList = p.members;
-		return ok(viewMatches.render(matchesList));
+		return ok(viewMatches.render(matchesList, filledForm));
 	}
 
 	public static Result myProfile() {
@@ -57,6 +63,22 @@ public class Matches extends Controller {
 	public static Result sendRequest(String username) {
 		User u = User.findByEmail(username);
 		return ok(sendRequest.render(u));
+	}
+	
+	public static class Challenge {
+	    public String email;
+	}
+	
+	
+	public static Result sendChallenge(String email) {
+		
+			User user = User.findByEmail(email);
+			user.challenger = request().username();
+			user.save();
+			
+			return redirect(
+					routes.Matches.getMatches()
+					);
 	}
 	
 	public static Result uploadVideo(String username) {
