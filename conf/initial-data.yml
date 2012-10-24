@@ -13,7 +13,7 @@ users:
         location:   Atlanta, GA
         hometown:   Chicago, IL
         occupation: Academia
-        description: I have always dreamt of becoming a professional baseball player. Country music is the best and I love coffee.
+        description: I have always dreamed of becoming a professional baseball player. Country music is the best and I love coffee.
     
 #demo matches female 1 to 10
     - !!models.User
@@ -25,7 +25,7 @@ users:
         location:   Atlanta, GA
         hometown:   Sydney, Australia
         occupation: Fashion Model
-        description: I came from Australia for a modelling stint and have been in love with Atlanta ever since. Peace ^^. 
+        description: I came from Australia for a modeling stint and have been in love with Atlanta ever since. Peace ^^. 
     
     - !!models.User
         email:      laldridge@sample.com
