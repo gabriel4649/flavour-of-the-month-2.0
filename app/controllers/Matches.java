@@ -111,20 +111,19 @@ public class Matches extends Controller {
 
 	public static Result viewVideos() {
 		List<String> list = new ArrayList<String>();
-		list.add("intro.swf");
-		list.add("intro.swf");list.add("intro.swf");
+		list.add("http://www.youtube.com/embed/Yh0AhrY9GjA");
 		User currUser = User.findByEmail(request().username());
 		User asker = User.findByEmail(currUser.asker);
 		
 		if (asker != null)
 		{
 		
-			return ok(viewVideos.render(list, asker));
+			return ok(viewVideos.render(asker, asker.question));
 		}
 		
 		else
 		{
-			return ok(emptyviewVideos.render(list));
+			return ok(emptyviewVideos.render());
 		}
 	}
 

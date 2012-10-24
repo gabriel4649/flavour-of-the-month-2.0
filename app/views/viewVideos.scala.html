@@ -1,4 +1,4 @@
-@(videos: List[String], user: User) @loggedmain("Async videos") {
+@( user: User, q: String) @loggedmain("Async videos") {
 
 <div class="container-fluid">
 	<div class="hero-unit">
@@ -8,22 +8,18 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				@for(video <- videos){
 				<div class="span3">
 					<center>
-						<embed src=@video height="200" width="200">
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/Yh0AhrY9GjA" frameborder="0" allowfullscreen></iframe>
 					</center>
 				</div>
-				}
 			</div>
 			
 			<h2> Who's challenged you? </h2>
 			<div class="row-fluid">
 			<div class="span8">
 				<h3>Upload a video to send to @user.name</h3>
-				<p>If you would like to send a video in reply to @user.name 's
-					questions, click on their pircture, select the video to upload, then click
-					upload to send your video.</p>
+				<p>@q</p>
 			</div>
 			<div class="span3 offset1">
 			<a href="@routes.Matches.uploadVideo(user.email)">

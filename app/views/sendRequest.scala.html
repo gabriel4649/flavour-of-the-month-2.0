@@ -2,7 +2,7 @@
 
 @import helper._
 
-@loggedmain("Send a request") {
+@loggedmain("Send a question") {
 
 
 
@@ -10,7 +10,7 @@
 	<div class="hero-unit">
 		<div class="row-fluid">
 			<div class="span8">
-				<h2>Send a request to @user.name</h2>
+				<h2>Send a question to @user.name</h2>
 				<p>To request for a video reply, send a list of questions to
 					@user.name , so that he/she can see what you want to know. Write
 					your questions in the text box below.</p>
@@ -23,7 +23,8 @@
 		@helper.form(action = routes.Matches.question(user.email)) {
 		<form>
 			<legend>Legend</legend>
-			   @inputText(qForm("Send a request")) 
+				<label>Send a question!</label>
+			   @inputText(qForm("question")) 
 			<span class="help-block">Do not ask too many questions, he/she
 				only has only 3 minutes!</span>
 			<button type="submit" class="btn">Send</button>

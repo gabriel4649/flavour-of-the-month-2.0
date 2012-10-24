@@ -1,4 +1,4 @@
-@(videos: List[String]) @loggedmain("Async videos") {
+@loggedmain("Async videos") {
 
 <div class="container-fluid">
 	<div class="hero-unit">
@@ -8,13 +8,11 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				@for(video <- videos){
 				<div class="span3">
 					<center>
-						<embed src=@video height="200" width="200">
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/Yh0AhrY9GjA" frameborder="0" allowfullscreen></iframe>
 					</center>
 				</div>
-				}
 			</div>
 			
 			<h2> Who's challenged you? </h2>
