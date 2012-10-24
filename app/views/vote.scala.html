@@ -30,9 +30,9 @@
 				@for(user <- users){
 				<center>
 					<div class="span2">
-						<img 
+						<a href="@user.image"><img height=200
 							src= "@user.image"
-							 /> <br> @user.name
+							 /></a> <br> @user.name
 							 <br> @user.location, @user.age
 						<div class="btn-toolbar">
 							<div class="btn-group">
