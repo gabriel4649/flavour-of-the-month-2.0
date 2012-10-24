@@ -5,15 +5,15 @@ users:
 
 # demo user whom is male
     - !!models.User
-        email:      edilbert@sample.com
-        name:       Eric Dilbert
+        email:      egilbert@sample.com
+        name:       Eric Gilbert
         password:   secret
         image:      "/assets/images/users/original/edilbert.jpg"
-        age:        27
+        age:        33
         location:   Atlanta, GA
         hometown:   Chicago, IL
-        occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        occupation: Academia
+        description: I have always dreamt of becoming a professional baseball player. Country music is the best and I love coffee.
     
 #demo matches female 1 to 10
     - !!models.User
@@ -24,8 +24,8 @@ users:
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
-        occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        occupation: Fashion Model
+        description: I came from Australia for a modelling stint and have been in love with Atlanta ever since. Peace ^^. 
     
     - !!models.User
         email:      laldridge@sample.com
@@ -35,8 +35,8 @@ users:
         age:        26
         location:   Atlanta, GA
         hometown:   Los Angeles, CA
-        occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        occupation: Designer
+        description: Passionate about fashion design, which is my forte and I'm glad that I have a career in my passion.
     
     - !!models.User
         email:      eheatherton@sample.com
@@ -47,7 +47,7 @@ users:
         location:   Atlanta, GA
         hometown:   Skokie, IL
         occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        description: I'm a student from University of Illinois and a part time model. Send me a challenge ;)
 
     - !!models.User
         email:      aambrosio@sample.com
@@ -57,8 +57,8 @@ users:
         age:        31
         location:   Atlanta, GA
         hometown:   Erechim, Brazil
-        occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        occupation: Freelance Model
+        description: I'm a freelance model and a part time nanny. Contradicting jobs huh? :) Hear from you soon.
 
     - !!models.User
         email:      ccampbell@sample.com
@@ -68,8 +68,8 @@ users:
         age:        31
         location:   Atlanta, GA
         hometown:   Kingston, Jamaica
-        occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        occupation: Accountant
+        description: I hate my work, but in this economy, I'm glad I have this high paying job. Ping me.
 
     - !!models.User
         email:      rclark@sample.com
@@ -80,7 +80,7 @@ users:
         location:   Atlanta, GA
         hometown:   West Palm Beach, FL
         occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        description: I used to be a highschool cheerleader and absolutely love to party. Invite me to a party!!!!!!
 
     - !!models.User
         email:      ddriegen@sample.com
@@ -90,8 +90,8 @@ users:
         age:        30
         location:   Atlanta, GA
         hometown:   Amsterdam, Holland
-        occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        occupation: Sales executive
+        description: I moved to Atlanta myself a few years back for work. Can't wait to meet new people from this awesome site.
 
     - !!models.User
         email:      eheming@sample.com
@@ -101,8 +101,8 @@ users:
         age:        34
         location:   Atlanta, GA
         hometown:   London, England
-        occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        occupation: Public relations officer
+        description: Currently I'm a diplomat working for the British High Council. I enjoy making new friends from all over the world.
 
     - !!models.User
         email:      kkloss@sample.com
@@ -113,7 +113,7 @@ users:
         location:   Atlanta, GA
         hometown:   Chicago, IL
         occupation: Student
-        description: I love Star Wars, Star Trek and Chocolate
+        description: I'm a full time student and a part time model. My dream is to be a Victoria's Secret Angel someday. :)
 
     - !!models.User
         email:      alima@sample.com
@@ -123,118 +123,118 @@ users:
         age:        31
         location:   Atlanta, GA
         hometown:   Salvador, Brazil
-        occupation: Student
+        occupation: Soccer player
         description: I love Star Wars, Star Trek and Chocolate
         
 #random male 1 to 5
     - !!models.User
         email:      rm1@sample.com
-        name:       Miranda Kerr
+        name:       rm1 
         password:   secret
         image:      "/assets/images/users/random/rm1.jpg"
-        age:        29
+        age:        28
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   New York, NY
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rm2@sample.com
-        name:       Miranda Kerr
+        name:       rm2
         password:   secret
         image:      "/assets/images/users/random/rm2.jpg"
-        age:        29
+        age:        26
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Ohio, IA
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rm3@sample.com
-        name:       Miranda Kerr
+        name:       rm3
         password:   secret
         image:      "/assets/images/users/random/rm3.jpg"
-        age:        29
+        age:        25
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Boston, MA
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rm4@sample.com
-        name:       Miranda Kerr
+        name:       rm4
         password:   secret
         image:      "/assets/images/users/random/rm4.jpg"
-        age:        29
+        age:        37
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Louisville, KY
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rm5@sample.com
-        name:       Miranda Kerr
+        name:       rm5
         password:   secret
         image:      "/assets/images/users/random/rm5.jpg"
         age:        29
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Taipei, Taiwan
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
 #random female 1 to 5
     - !!models.User
         email:      rf1@sample.com
-        name:       Miranda Kerr
+        name:       rf1
         password:   secret
         image:      "/assets/images/users/random/rf1.jpg"
-        age:        29
+        age:        25
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Seoul, South Korea
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rf2@sample.com
-        name:       Miranda Kerr
+        name:       rf2
         password:   secret
         image:      "/assets/images/users/random/rf2.jpg"
-        age:        29
+        age:        31
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Liverpool, England
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rf3@sample.com
-        name:       Miranda Kerr
+        name:       rf3
         password:   secret
         image:      "/assets/images/users/random/rf3.jpg"
-        age:        29
-        location:   Atlanta, GA
+        age:        24
+        location:   Honolulu, HI
         hometown:   Sydney, Australia
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rf4@sample.com
-        name:       Miranda Kerr
+        name:       rf4
         password:   secret
         image:      "/assets/images/users/random/rf4.jpg"
-        age:        29
+        age:        27
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Atlanta, GA
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
     - !!models.User
         email:      rf5@sample.com
-        name:       Miranda Kerr
+        name:       rf5
         password:   secret
         image:      "/assets/images/users/random/rf5.jpg"
         age:        29
         location:   Atlanta, GA
-        hometown:   Sydney, Australia
+        hometown:   Providence, RI
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
     
