@@ -41,6 +41,10 @@ public class Matches extends Controller {
 	
 		return ok(vote.render(voteList));
 	}
+	
+	public static Result index() {
+		return ok(index.render("Your new application is ready."));
+	}
 
 	public static Result getMatches() {
 		Form<Challenge> filledForm = challengeForm.bindFromRequest();
@@ -118,7 +122,7 @@ public class Matches extends Controller {
 		if (asker != null)
 		{
 		
-			return ok(viewVideos.render(asker, asker.question));
+			return ok(viewVideos.render(asker, currUser.question));
 		}
 		
 		else

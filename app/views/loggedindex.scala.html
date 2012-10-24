@@ -1,0 +1,51 @@
+@(message: String) @loggedmain("Honest Meet") {
+
+<!-- Main hero unit for a primary marketing message or call to action -->
+
+
+<div class="hero-unit">
+	<h1>Meet <em>The One</em> at Honest Meet</h1>
+	<p>Honest Meet is a different kind of online dating site. We try to keep things
+	honest, fun and safe. We invite you to join our community and make new friends or possibly meet
+	somebody special that might change your life.</p>
+
+	<center>
+		<img id=theme-pic
+			src="/assets/images/friends.jpg"
+			alt="alt" height="100" width="940">
+	</center>
+	<br></br>
+	<p>
+		<a href="@routes.InfoPages.about()" class="btn btn-primary btn-large">Learn more &raquo;</a>
+	</p>
+</div>
+
+<!-- Example row of columns -->
+<div class="row">
+	<div class="span4">
+		<h2>Flavour of the month</h2>
+		<p>The monthly theme adds an element of fun and keeps users
+			active.</p>
+		<p>
+			<a class="btn" href="@routes.InfoPages.flavour()"">Details &raquo;</a>
+		</p>
+	</div>
+
+	<div class="span4">
+		<h2>10 profiles in 3 days</h2>
+		<p>Instead of spending hours looking through profiles, give it a
+			try and talk to someone!</p>
+		<p>
+			<a class="btn" href="@routes.InfoPages.profiles()"">Details &raquo;</a>
+		</p>
+	</div>
+
+	<div class="span4">
+		<h2>Async speed dating</h2>
+		<p>Our asynchronious speed dating will help you get a better feel of your matches.</p>
+		<p>
+			<a class="btn" href="@routes.InfoPages.async()"">Details &raquo;</a>
+		</p>
+	</div>
+</div>
+}

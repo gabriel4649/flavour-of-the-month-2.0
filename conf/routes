@@ -20,7 +20,8 @@ GET     /async                              controllers.InfoPages.async()
 GET     /profiles							controllers.InfoPages.profiles()
 GET     /flavour                            controllers.InfoPages.flavour()
 
-# Matches         
+# Matches    
+GET     /home                               controllers.Matches.index()     
 GET     /matches                            controllers.Matches.getMatches()
 GET     /send_request/:user                 controllers.Matches.sendRequest(user: String)
 POST    /send_request/:user                 controllers.Matches.question(user: String)
