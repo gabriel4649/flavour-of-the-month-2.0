@@ -41,6 +41,9 @@ public class User extends Model {
     public String location;
     
     @Constraints.Required
+    public String hometown;
+    
+    @Constraints.Required
     public String occupation;
     
     @Constraints.Required

@@ -11,6 +11,7 @@ users:
         image:      "/assets/images/users/original/edilbert2.jpg"
         age:        27
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
     
@@ -22,6 +23,7 @@ users:
         image:      "/assets/images/users/original/mkerr.jpg"
         age:        29
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
     
@@ -32,6 +34,7 @@ users:
         image:      "/assets/images/users/original/laldridge.jpg"
         age:        26
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
     
@@ -42,6 +45,7 @@ users:
         image:      "/assets/images/users/original/eheatherton.jpg"
         age:        23
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
 
@@ -52,6 +56,7 @@ users:
         image:      "/assets/images/users/original/aambrosio.jpg"
         age:        31
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
 
@@ -62,6 +67,7 @@ users:
         image:      "/assets/images/users/original/ccampbell.jpg"
         age:        31
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
 
@@ -72,6 +78,7 @@ users:
         image:      "/assets/images/users/original/rclark.jpg"
         age:        23
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
 
@@ -82,6 +89,7 @@ users:
         image:      "/assets/images/users/original/ddriegen.jpg"
         age:        30
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
 
@@ -92,6 +100,7 @@ users:
         image:      "/assets/images/users/original/eheming.jpg"
         age:        34
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
 
@@ -102,6 +111,7 @@ users:
         image:      "/assets/images/users/original/kkloss.jpg"
         age:        20
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
 
@@ -112,6 +122,7 @@ users:
         image:      "/assets/images/users/original/alima.jpg"
         age:        31
         location:   Atlanta
+        hometown:	Atlanta
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
     
