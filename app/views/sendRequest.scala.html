@@ -1,0 +1,28 @@
+@(user: User) @main("Flavour of the Month") {
+
+<div class="container-fluid">
+	<div class="hero-unit">
+		<div class="row-fluid">
+			<div class="span8">
+				<h2>Send a request to @user.name</h2>
+				<p>To request for a video reply, send a list of questions to
+					@user.name , so that he/she can see what you want to know. Write
+					your questions in the text box below.</p>
+			</div>
+			<div class="span3 offset1">
+				<img src=@user.image width="150" />
+			</div>
+		</div>
+		<br>
+		<form>
+			<legend>Legend</legend>
+			<label>Send a request</label>
+			<textarea rows="10" class="span8 offset1"></textarea>
+			<span class="help-block">Do not ask too many questions, he/she
+				only has 3 minutes!</span>
+			<button type="submit" class="btn">Send</button>
+		</form>
+	</div>
+</div>
+
+}

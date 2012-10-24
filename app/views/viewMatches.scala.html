@@ -10,12 +10,12 @@
 
 
 <div class="container-fluid">
-<div class="hero-unit">
-	<h2>View Matches:</h2>
-	<p>Every 3 days, you will be able to see 10 new matches. Select 3
-		people to have a short video chat with to know them better. Start
-		making new friends now!</p>
-</div>
+	<div class="hero-unit">
+		<h2>View Matches:</h2>
+		<p>Every 3 days, you will be able to see 10 new matches. Select 3
+			people to have a short video chat with to know them better. Start
+			making new friends now!</p>
+	</div>
 </div>
 
 
@@ -27,12 +27,15 @@
 					@for(user <- users){
 					<div class="span5" id="matches">
 						<center>
-							<a href="@routes.Application.viewProfile(user.email)"> <img src=@user.image width=250 />
+							<a href="@routes.Application.viewProfile(user.email)"> <img
+								src=@user.image width=250 />
 							</a>
 							<h4></h4>
-							<a href="#"><button id="button" type="submit" class="btn btn-mini">
-								<strong>Send request to @user.name</strong>
-							</button></a>
+							<a href="@routes.Application.sendRequest(user.email)"><button
+									id="button" type="submit" class="btn btn-mini">
+									<strong>Send request to @user.name</strong>
+
+								</button></a>
 						</center>
 					</div>
 					}

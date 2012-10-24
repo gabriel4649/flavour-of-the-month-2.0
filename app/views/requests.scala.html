@@ -4,37 +4,41 @@
 	<div class="hero-unit">
 		<h2>Accept/Reject Requests</h2>
 		<p>The following people have sent you a request. You can choose to
-			accept or reject their request.</p>
+			accept the request and send a video reply or ignore their request.</p>
 	</div>
 </div>
 
 <div class="row">
-	<div class="span10 offset1">
+	<div class="span8 offset2">
+
+		@for(user <- users){
 		<div class="row">
-			@for(user <- users){
 			<center>
-				<div class="span2 offset1">
+				<div class="span3">
 					<center>
-						<a href="@routes.Application.viewProfile(user.email)"> <img src=@user.image width=100 />
-							</a>
+						<a href="@routes.Application.viewProfile(user.email)"> <img
+							src=@user.image width=150 />
+						</a>
 
 						<h4>@user.name</h4>
 
-						<div class="btn-group">
-							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-								Respond to request <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<!-- dropdown menu links -->
-								<li>Accept</li>
-								<li>Reject</li>
-							</ul>
-						</div>
+
+
+						</a>
 					</center>
 				</div>
+
+				<div class="span4">
+					<br> <br>
+					<p>Insert the questions here. Use "@user + ._____" eg. "@user +
+						.questions" to place the questions here.</p>
+					<a href="@routes.Application.uploadVideo(user.email)">
+						<button id="button" type="submit" class="btn btn-mini btn-success pull-right">Accept Request</button>
+				</div>
 			</center>
-			}
 		</div>
+		<br> <br> }
+
 	</div>
 </div>
 }

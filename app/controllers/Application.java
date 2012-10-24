@@ -89,10 +89,6 @@ public class Application extends Controller {
 		return ok(requests.render(list));
 	}
 
-	public static Result chat() {
-		return ok(chat.render("Your new application is ready."));
-	}
-
 	public static Result vote() {
 		long id = 1;
 		Project p = Project.findById(id);
@@ -120,5 +116,20 @@ public class Application extends Controller {
 		return ok(myProfile.render(u));
 	}
 	
+	public static Result sendRequest(String username) {
+		User u = User.findByEmail(username);
+		return ok(sendRequest.render(u));
+	}
+	
+	public static Result uploadVideo(String username) {
+		User u = User.findByEmail(username);
+		return ok(uploadVideo.render(u));
+	}
 
+	public static Result viewVideos() {
+		List<String> list = new ArrayList<String>();
+		list.add("intro.swf");
+		list.add("intro.swf");list.add("intro.swf");
+		return ok(viewVideos.render(list));
+	}
 }
