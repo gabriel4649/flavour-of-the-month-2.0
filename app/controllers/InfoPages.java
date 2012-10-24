@@ -17,7 +17,7 @@ public class InfoPages extends Controller {
 	
 	public static Result about()
 	{
-		return ok(about.render("Hello Professor Eric"));
+		return ok(about.render());
 	}
 
 }
