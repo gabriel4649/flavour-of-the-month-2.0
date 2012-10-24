@@ -1,0 +1,85 @@
+@main("Contact Us") {
+
+	<style>
+	.portrait {
+		float: left;
+		width: 140px;
+		margin-right: 35px;
+		margin-bottom: 50px;
+	}
+
+	.portrait .name {
+		font-size: 14px;
+		line-height: 1.2em;
+		color: #0099ff;
+	}
+
+	.portrait .position {
+		font-size: 11px;
+		line-height: 1.2em;
+		color: gray;
+	}
+
+	.portrait .twitter {
+		font-size: 11px;
+		line-height: 1.2em;
+		color: gray;
+	}
+
+	.portrait .thumbnail {
+		width: 120px;
+		height: 120px;
+		background-image: url('/assets/team.jpg'); 
+		background-color: transparent; 
+		background-repeat: no-repeat;
+	}
+
+	.portrait .description {
+		z-index: 1000;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 12px;
+		line-height: 1.5em;
+		width: 300px;
+		height: 150px;
+		background: #0099ff;
+		color: white;
+		margin-top: -150px;
+		display: none;
+		border: 1px solid white;
+		box-sizing: border-box;
+	}
+
+</style>
+
+<div class="page-header">
+    <h1>Contact us <small>we love feedback</small></h1>
+</div>
+
+<p>You can contact us by an email to any of our team members.</p>
+
+<div class="page-header">
+    <h1>The Team <small>Social Computing Fall 2012</small></h1>
+</div>
+
+<div class="the-team">
+		<div class="portrait">
+            <div class="thumbnail left bottom">
+            <img src="/assets/images/contact/gabriel.jpg" alt="Gabriel J. Pérez Irizarry">
+            </div>
+		</div>
+        <div class="portrait">
+            <div class="thumbnail left bottom">
+            <img src="/assets/images/contact/gabriel.jpg" alt="Wing Lok">
+            </div>
+		</div>
+		 <div class="portrait">
+            <div class="thumbnail left bottom">
+            <img src="/assets/images/contact/gabriel.jpg" alt="Seth Lim">
+            </div>
+		</div>
+</div>
+
+}
+
+

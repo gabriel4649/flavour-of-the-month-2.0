@@ -12,7 +12,7 @@ public class InfoPages extends Controller {
 	
 	public static Result contact()
 	{
-		return TODO;
+		return ok(contact.render());
 	}
 	
 	public static Result about()
