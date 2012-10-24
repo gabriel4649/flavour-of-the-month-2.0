@@ -35,11 +35,79 @@
     	<input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />  
     </div> 
 </div>
+    
+  
+    
+  		<form>
+			<label>Upload your Word Mugshot™</label> <input type="file"></input>
+			<button type="submit" class="btn btn-primary btn-medium"><strong>Upload</strong></button>
+			<span class="help-block" id="captcha">Name your video with both your name
+				and the receipient's name so that he/she knows who it's from.</span>
+
+		</form>
+		
+		  <script language="javascript" type="text/javascript">
+    
+    // Use the following variable to specify
+// the number of random words
+var NumberOfWords = 28
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to
+// define your random words:
+words[1] = "czarevitch"
+words[2] = "brightwork"
+words[3] = "verkrampte"
+words[4] = "protectrix"
+words[5] = "nudibranch"
+words[6] = "grandchild"
+words[7] = "newfangled"
+words[8] = "flugelhorn"
+words[9] = "mythologer"
+words[10] = "pluperfect"
+words[11] = "jellygraph"
+words[12] = "quickthorn"
+words[13] = "rottweiler"
+words[14] = "technician"
+words[15] = "cowpuncher"
+words[16] = "middlebrow"
+words[17] = "jackhammer"
+words[18] = "triphthong"
+words[19] = "wunderkind"
+words[20] = "dazzlement"
+words[21] = "jabberwock"
+words[22] = "witchcraft"
+words[23] = "pawnbroker"
+words[24] = "thumbprint"
+words[25] = "motorcycle"
+words[26] = "cryptogram"
+words[27] = "torchlight"
+words[28] = "bankruptcy"
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord() {
+// Generate a random number between 1 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the word inside the text box
+return words[rnd]
+}
+ document.getElementById("captcha").innerHTML=PickRandomWord();    
+    </script>
 </fieldset>
 
 <div class="actions">
   <input class="btn primary" name="commit" type="submit" value="Submit" />
 </div>
+
+
 
 </form>
 }

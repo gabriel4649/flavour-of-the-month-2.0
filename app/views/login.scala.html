@@ -6,15 +6,18 @@
 <h1>Log in</h1>  
 
 @if(form.hasGlobalErrors) { 
-                <p class="error">
-                    @form.globalError.message
-                </p>
+
+	<div class="alert">
+    @form.globalError.message
+    </div>
             }
             
 @if(flash.contains("success")) {
-                <p class="success">
-                    @flash.get("success")
-                </p>
+
+    <div class="alert alert-success">
+       @flash.get("success")
+    </div>
+ 
             }
              
             
