@@ -1,4 +1,4 @@
-@main("Singup") {
+@main("Signup") {
 <h1>Sign Up</h1> 
  
 <p>If you already have an account, <a href="@routes.Application.login()">Login Here</a>.</p>
@@ -38,14 +38,15 @@
     
   
     
-  		<form>
-			<label>Upload your Word Mugshot™</label> <input type="file"></input>
+  		
+			<label>Upload your Word Mugshot™</label>        
 			<button type="submit" class="btn btn-primary btn-medium"><strong>Upload</strong></button>
+			
+			
 			<span class="help-block" id="captcha">Name your video with both your name
 				and the receipient's name so that he/she knows who it's from.</span>
+			
 
-		</form>
-		
 		  <script language="javascript" type="text/javascript">
     
     // Use the following variable to specify
@@ -99,8 +100,11 @@ var rnd = Math.ceil(Math.random() * NumberOfWords)
 // Display the word inside the text box
 return words[rnd]
 }
+
  document.getElementById("captcha").innerHTML=PickRandomWord();    
     </script>
+    
+</form>    
 </fieldset>
 
 <div class="actions">
@@ -110,4 +114,5 @@ return words[rnd]
 
 
 </form>
+<br>
 }
