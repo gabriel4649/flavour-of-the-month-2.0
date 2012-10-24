@@ -1,24 +1,23 @@
-@(message: String) @main("Flavour of the Month") {
+@(message: String) @main("Honest Meet") {
 
 <!-- Main hero unit for a primary marketing message or call to action -->
 
 
 <div class="hero-unit">
-<h2>Flavour of the month: South Park</h2>
-	<center>
-		<img id=theme-pic
-			src="http://www.pslib.cz/tomas.trdla/lay/SouthParkBanner.jpg"
-			alt="alt" height="100" width="940">
-	</center>
-	<br>
-	<h2>Know more people at Eventually Friends!</h2>
-	<p>Eventually Friends helps people to make new friends online.
+	<h2>Meet the one at Honest Meet</h2>
+	<p>Honest meet helps people to make new friends online.
 		Although social media has developed tremendously, they mostly focus on
 		maintaining existing friendships, keeping in touch. Eventually friends
 		allows you to meet new people online and widen your social circle.</p>
 
+	<center>
+		<img id=theme-pic
+			src="/assets/images/friends.jpg"
+			alt="alt" height="100" width="940">
+	</center>
+	<br></br>
 	<p>
-		<a class="btn btn-primary btn-large">Learn more &raquo;</a>
+		<a href="@routes.InfoPages.about()" class="btn btn-primary btn-large">Learn more &raquo;</a>
 	</p>
 </div>
 
