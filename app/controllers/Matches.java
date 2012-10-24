@@ -16,6 +16,7 @@ import views.html.*;
 public class Matches extends Controller {
 	
 	static Form<Challenge> challengeForm = form(Challenge.class);
+	static Form<Question> questionForm = form(Question.class);
 	
 	public static Result requests() {
 		List<User> list = new ArrayList<User>();
@@ -61,12 +62,33 @@ public class Matches extends Controller {
 	}
 	
 	public static Result sendRequest(String username) {
+		Form<Question> filledForm = questionForm.bindFromRequest();
 		User u = User.findByEmail(username);
-		return ok(sendRequest.render(u));
+		return ok(sendRequest.render(u, filledForm));
+	}
+	
+	/**
+	 * Handle question form submission.
+	 */
+	public static Result question(String user) {
+		Form<Question> loginForm = form(Question.class).bindFromRequest();
+	
+			String question = loginForm.get().question;
+			User u = User.findByEmail(user);
+			u.question = question;
+			u.asker = request().username();
+			u.save();
+			
+			return redirect(routes.Matches.requests());
+	
 	}
 	
 	public static class Challenge {
 	    public String email;
+	}
+	
+	public static class Question {
+	    public String question;
 	}
 	
 	
@@ -90,7 +112,19 @@ public class Matches extends Controller {
 		List<String> list = new ArrayList<String>();
 		list.add("intro.swf");
 		list.add("intro.swf");list.add("intro.swf");
-		return ok(viewVideos.render(list));
+		User currUser = User.findByEmail(request().username());
+		User asker = User.findByEmail(currUser.asker);
+		
+		if (asker != null)
+		{
+		
+			return ok(viewVideos.render(list, asker));
+		}
+		
+		else
+		{
+			return ok(emptyviewVideos.render(list));
+		}
 	}
 
 }

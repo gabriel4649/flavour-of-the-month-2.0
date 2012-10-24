@@ -1,4 +1,10 @@
-@(user: User) @loggedmain("Send a request") {
+@(user: User, qForm: Form[Matches.Question]) 
+
+@import helper._
+
+@loggedmain("Send a request") {
+
+
 
 <div class="container-fluid">
 	<div class="hero-unit">
@@ -14,14 +20,15 @@
 			</div>
 		</div>
 		<br>
+		@helper.form(action = routes.Matches.question(user.email)) {
 		<form>
 			<legend>Legend</legend>
-			<label>Send a request</label>
-			<textarea rows="10" class="span8 offset1"></textarea>
+			   @inputText(qForm("Send a request")) 
 			<span class="help-block">Do not ask too many questions, he/she
 				only has only 3 minutes!</span>
 			<button type="submit" class="btn">Send</button>
 		</form>
+		}
 	</div>
 </div>
 

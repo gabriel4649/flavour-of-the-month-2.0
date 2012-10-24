@@ -51,6 +51,10 @@ public class User extends Model {
     
     public String challenger;
     
+    public String question;
+    
+    public String asker;
+    
     // -- Queries
     
     public static Model.Finder<String,User> find = new Model.Finder(String.class, User.class);
