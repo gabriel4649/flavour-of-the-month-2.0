@@ -8,6 +8,7 @@ create table account (
   image                     varchar(255),
   age                       varchar(255),
   location                  varchar(255),
+  hometown                  varchar(255),
   occupation                varchar(255),
   description               varchar(255),
   constraint pk_account primary key (email)
