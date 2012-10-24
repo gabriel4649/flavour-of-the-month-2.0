@@ -16,6 +16,9 @@ GET     /signup 							controllers.Application.signup()
 # Info Pages
 GET     /about                              controllers.InfoPages.about()
 GET     /contact				            controllers.InfoPages.contact()
+GET     /async                              controllers.InfoPages.async()
+GET     /profiles							controllers.InfoPages.profiles()
+GET     /flavour                            controllers.InfoPages.flavour()
 
 # Matches         
 GET     /matches                            controllers.Matches.getMatches()

@@ -19,5 +19,20 @@ public class InfoPages extends Controller {
 	{
 		return ok(about.render());
 	}
+	
+	public static Result async()
+	{
+		return ok(async.render());
+	}
+	
+	public static Result flavour()
+	{
+		return ok(flavour.render());
+	}
+	
+	public static Result profiles()
+	{
+		return ok(profiles.render());
+	}
 
 }
