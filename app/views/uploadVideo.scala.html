@@ -1,0 +1,27 @@
+@(user: User) @main("Flavour of the Month") {
+
+<div class="container-fluid">
+	<div class="hero-unit">
+		<div class="row-fluid">
+			<div class="span8">
+				<h2>Upload a video to send to @user.name</h2>
+				<p>If you would like to send a video in reply to @user.name 's
+					questions, click on browse, select the video to upload, then click
+					upload to send your video.</p>
+			</div>
+			<div class="span3 offset1">
+				<img src=@user.image width="150" />
+			</div>
+		</div>
+		<br>
+		<form>
+			<label>Upload a video to send</label> <input type="file"></input>
+			<button type="submit" class="btn btn-primary btn-medium"><strong>Upload</strong></button>
+			<span class="help-block">Name your video with both your name
+				and the receipient's name so that he/she knows who it's from.</span>
+
+		</form>
+	</div>
+</div>
+
+}

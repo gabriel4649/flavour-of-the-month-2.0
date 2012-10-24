@@ -10,7 +10,7 @@ GET     /login                              controllers.Application.login()
 POST    /login                              controllers.Application.authenticate()
 GET     /logout                             controllers.Application.logout()
 
-# Singup
+# Signup
 GET     /signup 							controllers.Application.signup()
 
 # Info Pages
@@ -18,15 +18,19 @@ GET     /about                              controllers.InfoPages.about()
 GET     /contact				            controllers.InfoPages.contact()
 
 # Matches         
-GET     /matches                           controllers.Application.getMatches()
+GET     /matches                            controllers.Application.getMatches()
+GET     /send_request/:user                 controllers.Application.sendRequest(user: String)
+GET     /upload_video/:user                 controllers.Application.uploadVideo(user: String)
 
 # Video Chat
-GET     /chat                               controllers.Application.chat()
+GET     /view_videos                               controllers.Application.viewVideos()
 GET     /requests                           controllers.Application.requests()
 
 #Profiles
 GET     /my_profile                         controllers.Application.myProfile()
 GET     /view_profile/:user                 controllers.Application.viewProfile(user: String)
+
+#Vote
 GET     /vote                               controllers.Application.vote()
 
 # Map static resources from the /public folder to the /public path

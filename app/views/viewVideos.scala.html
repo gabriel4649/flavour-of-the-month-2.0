@@ -1,0 +1,24 @@
+@(videos: List[String]) @main("Flavour of the Month") {
+
+<div class="container-fluid">
+	<div class="hero-unit">
+		<h2>View video messages</h2>
+		<p>Look at the video messages that other users sent to you in
+			reply to your questions for them.</p>
+
+		<div class="container-fluid">
+			<div class="row">
+				@for(video <- videos){
+				<div class="span3">
+					<center>
+						<embed src=@video height="200" width="200">
+					</center>
+				</div>
+				}
+			</div>
+		</div>
+
+	</div>
+</div>
+
+}
