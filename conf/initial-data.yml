@@ -267,4 +267,31 @@ projects:
                 email: kkloss@sample.com
             - !!models.User
                 email: alima@sample.com
+				
+- !!models.Project
+        id:         2
+        name:       Play 2.0   
+        folder:     Play framework
+        members:
+            - !!models.User
+                email: rm1@sample.com
+            - !!models.User
+                email: rf1@sample.com
+            - !!models.User
+                email: rm2@sample.com
+            - !!models.User
+                email: rf2@sample.com
+            - !!models.User
+                email: rm3@sample.com
+            - !!models.User
+                email: rf3@sample.com
+            - !!models.User
+                email: rm4@sample.com
+            - !!models.User
+                email: rf4@sample.com
+            - !!models.User
+                email: rm5@sample.com
+            - !!models.User
+                email: rf5@sample.com
+
             

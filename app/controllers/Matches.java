@@ -34,10 +34,11 @@ public class Matches extends Controller {
 	}
 
 	public static Result vote() {
-		long id = 1;
+		long id = 2;
 		Project p = Project.findById(id);
 		List<User> voteList = new ArrayList<User>();
 		voteList = p.members;
+	
 		return ok(vote.render(voteList));
 	}
 
