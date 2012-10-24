@@ -131,7 +131,7 @@ users:
         email:      rm1@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rm1.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -142,7 +142,7 @@ users:
         email:      rm2@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rm2.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -153,7 +153,7 @@ users:
         email:      rm3@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rm3.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -164,7 +164,7 @@ users:
         email:      rm4@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rm4.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -175,19 +175,19 @@ users:
         email:      rm5@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rm5.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
         occupation: Student
         description: I love Star Wars, Star Trek and Chocolate
         
-#random male 1 to 5
+#random female 1 to 5
     - !!models.User
         email:      rf1@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rf1.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -198,7 +198,7 @@ users:
         email:      rf2@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rf2.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -209,7 +209,7 @@ users:
         email:      rf3@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rf3.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -220,7 +220,7 @@ users:
         email:      rf4@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rf4.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
@@ -231,7 +231,7 @@ users:
         email:      rf5@sample.com
         name:       Miranda Kerr
         password:   secret
-        image:      "/assets/images/users/original/mkerr.jpg"
+        image:      "/assets/images/users/random/rf5.jpg"
         age:        29
         location:   Atlanta, GA
         hometown:   Sydney, Australia
