@@ -267,12 +267,12 @@ projects:
                 email: kkloss@sample.com
             - !!models.User
                 email: alima@sample.com
-				
-- !!models.Project
-        id:         2
-        name:       Play 2.0   
-        folder:     Play framework
-        members:
+
+    - !!models.Project
+            id:         2
+            name:       Play 2.0   
+            folder:     Play framework
+            members:
             - !!models.User
                 email: rm1@sample.com
             - !!models.User
