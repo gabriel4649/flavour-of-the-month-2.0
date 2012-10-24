@@ -27,11 +27,11 @@
 					@for(user <- users){
 					<div class="span5" id="matches">
 						<center>
-							<a href="@routes.Application.viewProfile(user.email)"> <img
+							<a href="@routes.Matches.viewProfile(user.email)"> <img
 								src=@user.image width=250 />
 							</a>
 							<h4></h4>
-							<a href="@routes.Application.sendRequest(user.email)"><button
+							<a href="@routes.Matches.sendRequest(user.email)"><button
 									id="button" type="submit" class="btn btn-mini">
 									<strong>Send request to @user.name</strong>
 

@@ -16,7 +16,7 @@
 			<center>
 				<div class="span3">
 					<center>
-						<a href="@routes.Application.viewProfile(user.email)"> <img
+						<a href="@routes.Matches.viewProfile(user.email)"> <img
 							src=@user.image width=150 />
 						</a>
 
@@ -32,7 +32,7 @@
 					<br> <br>
 					<p>Insert the questions here. Use "@user + ._____" eg. "@user +
 						.questions" to place the questions here.</p>
-					<a href="@routes.Application.uploadVideo(user.email)">
+					<a href="@routes.Matches.uploadVideo(user.email)">
 						<button id="button" type="submit" class="btn btn-mini btn-success pull-right">Accept Request</button>
 				</div>
 			</center>

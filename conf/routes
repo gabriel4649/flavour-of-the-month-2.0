@@ -18,20 +18,20 @@ GET     /about                              controllers.InfoPages.about()
 GET     /contact				            controllers.InfoPages.contact()
 
 # Matches         
-GET     /matches                            controllers.Application.getMatches()
-GET     /send_request/:user                 controllers.Application.sendRequest(user: String)
-GET     /upload_video/:user                 controllers.Application.uploadVideo(user: String)
+GET     /matches                            controllers.Matches.getMatches()
+GET     /send_request/:user                 controllers.Matches.sendRequest(user: String)
+GET     /upload_video/:user                 controllers.Matches.uploadVideo(user: String)
 
 # Video Chat
-GET     /view_videos                               controllers.Application.viewVideos()
-GET     /requests                           controllers.Application.requests()
+GET     /view_videos                        controllers.Matches.viewVideos()
+GET     /requests                           controllers.Matches.requests()
 
 #Profiles
-GET     /my_profile                         controllers.Application.myProfile()
-GET     /view_profile/:user                 controllers.Application.viewProfile(user: String)
+GET     /my_profile                         controllers.Matches.myProfile()
+GET     /view_profile/:user                 controllers.Matches.viewProfile(user: String)
 
 #Vote
-GET     /vote                               controllers.Application.vote()
+GET     /vote                               controllers.Matches.vote()
 
 # Map static resources from the /public folder to the /public path
 GET     /assets/*file                       controllers.Assets.at(path="/public", file)
