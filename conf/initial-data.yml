@@ -278,17 +278,17 @@ projects:
             - !!models.User
                 email: rf1@sample.com
             - !!models.User
-                email: rm2@sample.com
-            - !!models.User
                 email: rf2@sample.com
+            - !!models.User
+                email: rm2@sample.com
             - !!models.User
                 email: rm3@sample.com
             - !!models.User
                 email: rf3@sample.com
             - !!models.User
-                email: rm4@sample.com
-            - !!models.User
                 email: rf4@sample.com
+            - !!models.User
+                email: rm4@sample.com
             - !!models.User
                 email: rm5@sample.com
             - !!models.User
